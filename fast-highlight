@@ -1559,6 +1559,7 @@ typeset -ga ZLAST_COMMANDS
                            for (( __pos = _start_pos; __pos <= _end_pos; __pos++ )) ; do
                              # ADD
                              [[ ${__buf[__pos]} == "/" ]] && (( __start=__pos-__PBUFLEN, __start >= 0 )) && reply+=("$(( __start - 1 )) $__start ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathseparator]}")
+                             [[ ${__buf[__pos]} == "~" ]] && (( __start=__pos-__PBUFLEN, __start >= 0 )) && reply+=("$(( __start - 1 )) $__start ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathhome]}")
                            done
                          }
                        else
