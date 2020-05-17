@@ -18,8 +18,8 @@ typeset -g FAST_THEME_NAME="zdharma"
 : ${FAST_HIGHLIGHT_STYLES[zdharmaglobbing]:=fg=110}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaglobbing-ext]:=fg=153}
 : ${FAST_HIGHLIGHT_STYLES[zdharmahistory-expansion]:=fg=blue,bold}
-: ${FAST_HIGHLIGHT_STYLES[zdharmasingle-hyphen-option]:=fg=243}
-: ${FAST_HIGHLIGHT_STYLES[zdharmadouble-hyphen-option]:=fg=243}
+: ${FAST_HIGHLIGHT_STYLES[zdharmasingle-hyphen-option]:=fg=61}
+: ${FAST_HIGHLIGHT_STYLES[zdharmadouble-hyphen-option]:=fg=61}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaback-quoted-argument]:=none}
 : ${FAST_HIGHLIGHT_STYLES[zdharmasingle-quoted-argument]:=fg=244}
 : ${FAST_HIGHLIGHT_STYLES[zdharmadouble-quoted-argument]:=fg=244}
@@ -55,7 +55,7 @@ typeset -g FAST_THEME_NAME="zdharma"
 : ${FAST_HIGHLIGHT_STYLES[zdharmabracket-level-2]:=fg=242}
 : ${FAST_HIGHLIGHT_STYLES[zdharmabracket-level-3]:=fg=243}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaglobal-alias]:=bg=19}
-: ${FAST_HIGHLIGHT_STYLES[zdharmasubcommand]:=fg=244}
+: ${FAST_HIGHLIGHT_STYLES[zdharmasubcommand]:=fg=65}
 : ${FAST_HIGHLIGHT_STYLES[zdharmasingle-sq-bracket]:=fg=80}
 : ${FAST_HIGHLIGHT_STYLES[zdharmadouble-sq-bracket]:=fg=80}
 : ${FAST_HIGHLIGHT_STYLES[zdharmadouble-paren]:=fg=244}
