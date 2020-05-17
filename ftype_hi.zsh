@@ -22,7 +22,7 @@
 : ${FAST_HIGHLIGHT_STYLES[ftype-lz4]:=fg=61,bold}
 : ${FAST_HIGHLIGHT_STYLES[ftype-lzh]:=fg=61,bold}
 : ${FAST_HIGHLIGHT_STYLES[ftype-lzma]:=fg=61,bold}
-: ${FAST_HIGHLIGHT_STYLES[ftype-rar]:=fg=80}
+: ${FAST_HIGHLIGHT_STYLES[ftype-rar]:=fg=63}
 : ${FAST_HIGHLIGHT_STYLES[ftype-rz]:=fg=61,bold}
 : ${FAST_HIGHLIGHT_STYLES[ftype-t7z]:=fg=61,bold}
 : ${FAST_HIGHLIGHT_STYLES[ftype-tar]:=fg=61}
