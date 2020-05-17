@@ -685,9 +685,19 @@ typeset -ga ZLAST_COMMANDS
         command)        __style=${FAST_THEME_NAME}command;;
 
         hashed)         __style=${FAST_THEME_NAME}hashed-command;;
-
-        dirpath)        __style=${FAST_THEME_NAME}path-to-dir;;
-
+        dirpath)
+          __style=${FAST_THEME_NAME}path-to-dir
+          (( __start=_start_pos-__PBUFLEN, __end=_end_pos-__PBUFLEN, __start >= 0 )) && reply+=("$__start $__end ${FAST_HIGHLIGHT_STYLES[$__style]}")
+          already_added=1
+          # TODO: path separators, optimize and add to async code-path
+          [[ -n ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathseparator]} && ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path]} != ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathseparator]} ]] && {
+            for (( __pos = _start_pos; __pos <= _end_pos; __pos++ )) ; do
+              # ADD
+              [[ ${__buf[__pos]} == "/" ]] && (( __start=__pos-__PBUFLEN, __start >= 0 )) && reply+=("$(( __start - 1 )) $__start ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathseparator]}")
+              [[ ${__buf[__pos]} == "~" ]] && (( __start=__pos-__PBUFLEN, __start >= 0 )) && reply+=("$(( __start - 1 )) $__start ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathhome]}")
+            done
+          }
+          ;;
         none)           # Assign?
                         if [[ $__arg == [a-zA-Z_][a-zA-Z0-9_]#(|\[[^\]]#\])(|[^\]]#\])(|[+])=* || $__arg == [0-9]##(|[+])=* || ( $braces_stack = T* && ${__arg_type} != 3 ) ]] {
                           __style=${FAST_THEME_NAME}assign
@@ -1553,7 +1563,6 @@ typeset -ga ZLAST_COMMANDS
 			 # ADD
 			 (( __start=_start_pos-__PBUFLEN, __end=_end_pos-__PBUFLEN, __start >= 0 )) && reply+=("$__start $__end ${FAST_HIGHLIGHT_STYLES[$__style]}")
                          already_added=1
-
                          # TODO: path separators, optimize and add to async code-path
                          [[ -n ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathseparator]} && ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path]} != ${FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}path_pathseparator]} ]] && {
                            for (( __pos = _start_pos; __pos <= _end_pos; __pos++ )) ; do
@@ -1631,7 +1640,7 @@ typeset -ga ZLAST_COMMANDS
     fi
     if [[ $__arg = (#b)*'#'(([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F])([0-9a-fA-F][0-9a-fA-F])|([0-9a-fA-F])([0-9a-fA-F])([0-9a-fA-F]))* || $__arg = (#b)*'rgb('(([0-9a-fA-F][0-9a-fA-F](#c0,1)),([0-9a-fA-F][0-9a-fA-F](#c0,1)),([0-9a-fA-F][0-9a-fA-F](#c0,1)))* ]]; then
       if [[ -n $match[2] ]]; then
-        if [[ $match[2] = ?? || $match[3] = ?? || $match[4] = ?? ]]; then 
+        if [[ $match[2] = ?? || $match[3] = ?? || $match[4] = ?? ]]; then
           (( __start=_start_pos-__PBUFLEN, __end=_end_pos-__PBUFLEN, __start >= 0 )) && reply+=("$__start $__end bg=#${(l:2::0:)match[2]}${(l:2::0:)match[3]}${(l:2::0:)match[4]}")
         else
           (( __start=_start_pos-__PBUFLEN, __end=_end_pos-__PBUFLEN, __start >= 0 )) && reply+=("$__start $__end bg=#$match[2]$match[3]$match[4]")
