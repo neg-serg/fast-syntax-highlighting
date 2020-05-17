@@ -1495,6 +1495,7 @@ typeset -ga ZLAST_COMMANDS
 		*.com) __style=ftype-com ;;
 		*.btm) __style=ftype-btm ;;
 		*.bin) __style=ftype-bin ;;
+		#--[ End of ftype array ]------@@@@
 
         *)       # F - (( after for
                  if [[ $braces_stack = F* ]]; then
