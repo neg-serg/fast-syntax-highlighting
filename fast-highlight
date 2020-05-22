@@ -1212,6 +1212,7 @@ typeset -ga ZLAST_COMMANDS
 		*.jidgo) __style=ftype-jidgo ;;
 		*.ini) __style=ftype-ini ;;
 		*.icls) __style=ftype-icls ;;
+		*.xkb) __style=ftype-xkb ;;
 		*.conf) __style=ftype-conf ;;
 		*.cfg) __style=ftype-cfg ;;
 		*.aux) __style=ftype-aux ;;

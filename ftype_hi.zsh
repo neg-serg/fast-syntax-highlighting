@@ -281,6 +281,7 @@
 : ${FAST_HIGHLIGHT_STYLES[ftype-aux]:=fg=239}
 : ${FAST_HIGHLIGHT_STYLES[ftype-cfg]:=fg=29}
 : ${FAST_HIGHLIGHT_STYLES[ftype-conf]:=fg=29}
+: ${FAST_HIGHLIGHT_STYLES[ftype-xkb]:=fg=29,italic}
 : ${FAST_HIGHLIGHT_STYLES[ftype-icls]:=fg=60}
 : ${FAST_HIGHLIGHT_STYLES[ftype-ini]:=fg=29}
 : ${FAST_HIGHLIGHT_STYLES[ftype-jidgo]:=fg=60}
