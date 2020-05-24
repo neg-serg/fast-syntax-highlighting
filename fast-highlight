@@ -1015,9 +1015,6 @@ typeset -ga ZLAST_COMMANDS
                  ;;
 
         #--[ Begining of ftype array ]------@@@@
-		*.old) __style=ftype-old ;;
-		*.in) __style=ftype-in ;;
-		*.am) __style=ftype-am ;;
 		*.pcap) __style=ftype-pcap ;;
 		*.dump) __style=ftype-dump ;;
 		*.dmp) __style=ftype-dmp ;;
@@ -1275,11 +1272,11 @@ typeset -ga ZLAST_COMMANDS
 		*.php) __style=ftype-php ;;
 		*.pfa) __style=ftype-pfa ;;
 		*.pc) __style=ftype-pc ;;
-		*.patch) __style=ftype-patch ;;
 		*.irb) __style=ftype-irb ;;
 		*.erb) __style=ftype-erb ;;
-		*.diff) __style=ftype-diff ;;
 		*.attheme) __style=ftype-attheme ;;
+		*.patch) __style=ftype-patch ;;
+		*.diff) __style=ftype-diff ;;
 		*.scss) __style=ftype-scss ;;
 		*.scm) __style=ftype-scm ;;
 		*.sass) __style=ftype-sass ;;
