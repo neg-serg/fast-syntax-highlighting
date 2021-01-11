@@ -1044,6 +1044,7 @@ typeset -ga ZLAST_COMMANDS
 		*.rs) __style=ftype-rs ;;
 		*.ml) __style=ftype-ml ;;
 		*.ii) __style=ftype-ii ;;
+		*.glsl) __style=ftype-glsl ;;
 		*.go) __style=ftype-go ;;
 		*.erl) __style=ftype-erl ;;
 		*.cxx) __style=ftype-cxx ;;
@@ -1114,6 +1115,7 @@ typeset -ga ZLAST_COMMANDS
 		*.ogm) __style=ftype-ogm ;;
 		*.nuv) __style=ftype-nuv ;;
 		*.mpg) __style=ftype-mpg ;;
+		*.mjpeg) __style=ftype-mjpeg ;;
 		*.mpeg) __style=ftype-mpeg ;;
 		*.mp4v) __style=ftype-mp4v ;;
 		*.mp4) __style=ftype-mp4 ;;
@@ -1274,6 +1276,7 @@ typeset -ga ZLAST_COMMANDS
 		*.pc) __style=ftype-pc ;;
 		*.irb) __style=ftype-irb ;;
 		*.erb) __style=ftype-erb ;;
+		*.colors) __style=ftype-colors ;;
 		*.attheme) __style=ftype-attheme ;;
 		*.patch) __style=ftype-patch ;;
 		*.diff) __style=ftype-diff ;;
