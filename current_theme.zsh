@@ -21,10 +21,10 @@ typeset -g FAST_THEME_NAME="zdharma"
 : ${FAST_HIGHLIGHT_STYLES[zdharmasingle-hyphen-option]:=fg=61}
 : ${FAST_HIGHLIGHT_STYLES[zdharmadouble-hyphen-option]:=fg=61}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaback-quoted-argument]:=none}
-: ${FAST_HIGHLIGHT_STYLES[zdharmasingle-quoted-argument]:=fg=244}
-: ${FAST_HIGHLIGHT_STYLES[zdharmadouble-quoted-argument]:=fg=244}
-: ${FAST_HIGHLIGHT_STYLES[zdharmadollar-quoted-argument]:=fg=244}
-: ${FAST_HIGHLIGHT_STYLES[zdharmaback-or-dollar-double-quoted-argument]:=fg=4,bold}
+: ${FAST_HIGHLIGHT_STYLES[zdharmasingle-quoted-argument]:=fg=247}
+: ${FAST_HIGHLIGHT_STYLES[zdharmadouble-quoted-argument]:=fg=247}
+: ${FAST_HIGHLIGHT_STYLES[zdharmadollar-quoted-argument]:=fg=247}
+: ${FAST_HIGHLIGHT_STYLES[zdharmaback-or-dollar-double-quoted-argument]:=fg=62,bold}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaback-dollar-quoted-argument]:=fg=243}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaassign]:=fg=38}
 : ${FAST_HIGHLIGHT_STYLES[zdharmaredirection]:=fg=25}
