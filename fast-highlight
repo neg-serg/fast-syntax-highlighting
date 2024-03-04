@@ -1643,6 +1643,8 @@ typeset -ga ZLAST_COMMANDS
 		*.dmg) __style=ftype-dmg ;;
 		*.lnk) __style=ftype-lnk ;;
 		*.exe) __style=ftype-exe ;;
+		*.net) __style=ftype-net ;;
+		*.ru) __style=ftype-ru ;;
 		*.com) __style=ftype-com ;;
 		*.bin) __style=ftype-bin ;;
 		*.vmdk) __style=ftype-vmdk ;;

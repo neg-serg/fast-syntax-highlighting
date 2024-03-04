@@ -83,6 +83,8 @@
 : ${FAST_HIGHLIGHT_STYLES[ftype-vmdk]:=fg=89}
 : ${FAST_HIGHLIGHT_STYLES[ftype-bin]:=fg=249}
 : ${FAST_HIGHLIGHT_STYLES[ftype-com]:=fg=111}
+: ${FAST_HIGHLIGHT_STYLES[ftype-ru]:=fg=111}
+: ${FAST_HIGHLIGHT_STYLES[ftype-net]:=fg=111}
 : ${FAST_HIGHLIGHT_STYLES[ftype-exe]:=fg=111}
 : ${FAST_HIGHLIGHT_STYLES[ftype-lnk]:=fg=39}
 : ${FAST_HIGHLIGHT_STYLES[ftype-dmg]:=fg=134,bold}
