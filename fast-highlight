@@ -168,6 +168,7 @@ typeset -gA FAST_HIGHLIGHT
 
 # Brackets highlighter active by default
 : ${FAST_HIGHLIGHT[use_brackets]:=1}
+: ${FAST_HIGHLIGHT[use_async]:=1}
 
 FAST_HIGHLIGHT+=(
   chroma-fast-theme    →chroma/-fast-theme.ch
