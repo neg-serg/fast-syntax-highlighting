@@ -1031,6 +1031,9 @@ typeset -ga ZLAST_COMMANDS
 		*.xcuserstate) __style=ftype-xcuserstate ;;
 		*.xcsettings) __style=ftype-xcsettings ;;
 		*.xcconfig) __style=ftype-xcconfig ;;
+		*.vcf) __style=ftype-vcf ;;
+		*.vcard) __style=ftype-vcard ;;
+		*.tg) __style=ftype-tg ;;
 		*.strings) __style=ftype-strings ;;
 		*.storyboard) __style=ftype-storyboard ;;
 		*.pyc) __style=ftype-pyc ;;
@@ -1040,6 +1043,10 @@ typeset -ga ZLAST_COMMANDS
 		*.mfasl) __style=ftype-mfasl ;;
 		*.localized) __style=ftype-localized ;;
 		*.incomplete) __style=ftype-incomplete ;;
+		*.ics) __style=ftype-ics ;;
+		*.feature) __style=ftype-feature ;;
+		*.example) __style=ftype-example ;;
+		*.ex) __style=ftype-ex ;;
 		*.entitlements) __style=ftype-entitlements ;;
 		*.dylib) __style=ftype-dylib ;;
 		*.DS_Store) __style=ftype-DS_Store ;;
@@ -1064,8 +1071,8 @@ typeset -ga ZLAST_COMMANDS
 		*.cap) __style=ftype-cap ;;
 		*.aria2) __style=ftype-aria2 ;;
 		*.dockerignore) __style=ftype-dockerignore ;;
-		*.containerignore) __style=ftype-containerignore ;;
 		*.SKIP) __style=ftype-SKIP ;;
+		*.containerignore) __style=ftype-containerignore ;;
 		*.scan) __style=ftype-scan ;;
 		*.out) __style=ftype-out ;;
 		*.old) __style=ftype-old ;;
@@ -1097,9 +1104,9 @@ typeset -ga ZLAST_COMMANDS
 		*.jsp) __style=ftype-jsp ;;
 		*.jnlp) __style=ftype-jnlp ;;
 		*.jsm) __style=ftype-jsm ;;
-		*.prql) __style=ftype-prql ;;
 		*.java) __style=ftype-java ;;
 		*.sql) __style=ftype-sql ;;
+		*.prql) __style=ftype-prql ;;
 		*.pgsql) __style=ftype-pgsql ;;
 		*.mysql) __style=ftype-mysql ;;
 		*.msql) __style=ftype-msql ;;
@@ -1130,8 +1137,8 @@ typeset -ga ZLAST_COMMANDS
 		*.erb) __style=ftype-erb ;;
 		*.e) __style=ftype-e ;;
 		*.asm) __style=ftype-asm ;;
-		*.ahk) __style=ftype-ahk ;;
 		*.scm) __style=ftype-scm ;;
+		*.ahk) __style=ftype-ahk ;;
 		*.rkt) __style=ftype-rkt ;;
 		*.ml) __style=ftype-ml ;;
 		*.lisp) __style=ftype-lisp ;;
@@ -1302,8 +1309,8 @@ typeset -ga ZLAST_COMMANDS
 		*.mp4v) __style=ftype-mp4v ;;
 		*.mp4) __style=ftype-mp4 ;;
 		*.MOV) __style=ftype-MOV ;;
-		*.mov) __style=ftype-mov ;;
 		*.mkv) __style=ftype-mkv ;;
+		*.mov) __style=ftype-mov ;;
 		*.mjpeg) __style=ftype-mjpeg ;;
 		*.m4v) __style=ftype-m4v ;;
 		*.m2v) __style=ftype-m2v ;;
@@ -1407,6 +1414,7 @@ typeset -ga ZLAST_COMMANDS
 		*.xinitrc) __style=ftype-xinitrc ;;
 		*.Xauthority) __style=ftype-Xauthority ;;
 		*.xkb) __style=ftype-xkb ;;
+		*.vil) __style=ftype-vil ;;
 		*.sls) __style=ftype-sls ;;
 		*.reg) __style=ftype-reg ;;
 		*.rc) __style=ftype-rc ;;
@@ -1513,8 +1521,8 @@ typeset -ga ZLAST_COMMANDS
 		*.accde) __style=ftype-accde ;;
 		*.accdb) __style=ftype-accdb ;;
 		*.typelib) __style=ftype-typelib ;;
-		*.sqlite) __style=ftype-sqlite ;;
 		*.nc) __style=ftype-nc ;;
+		*.sqlite) __style=ftype-sqlite ;;
 		*.mde) __style=ftype-mde ;;
 		*.mdb) __style=ftype-mdb ;;
 		*.localstorage) __style=ftype-localstorage ;;
@@ -1522,8 +1530,8 @@ typeset -ga ZLAST_COMMANDS
 		*.fp7) __style=ftype-fp7 ;;
 		*.fmp12) __style=ftype-fmp12 ;;
 		*.db) __style=ftype-db ;;
-		*.btm) __style=ftype-btm ;;
 		*.pptxm) __style=ftype-pptxm ;;
+		*.btm) __style=ftype-btm ;;
 		*.pptsm) __style=ftype-pptsm ;;
 		*.pptx) __style=ftype-pptx ;;
 		*.ppts) __style=ftype-ppts ;;
