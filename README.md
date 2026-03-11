@@ -1,3 +1,7 @@
+> **⚠️ Archived**: I've switched to native Zsh syntax highlighting, which works significantly faster. This repository is no longer maintained.
+
+---
+
 # Fast Syntax Highlighting (F-Sy-H) [![Gitter][gitter-image]][gitter-link]
 
 Feature rich syntax highlighting for Zsh.
